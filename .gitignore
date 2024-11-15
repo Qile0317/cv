@@ -311,4 +311,5 @@ TSWLatexianTemp*
 .vscode
 
 # ignore so large bin changes aren't shown
+out
 main.pdf
