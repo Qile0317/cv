@@ -76,11 +76,15 @@
     #4 % Address
   \end{center}
 }
+
+\newcommand{\myinput}[1]{
+  \input{include/#1}
+}
 %%% ----------------------------- %%%
 
 
 \begin{document}
-\include{colors.tex} % Load custom colors from colors file
+\include{config/colors.tex} % Load custom colors from colors file
 \mytitle{Your Name}{person@gmail.com}{yourwebsite.com}{Your Address\\Goes here\\This field can be excluded} % Insert your custom title
 
 
@@ -92,17 +96,17 @@
 % Value in [] sets the indentation level of the bookmark
 \pdfbookmark[1]{Education}{}
 \section*{Education}
-\input{education.tex}
+\myinput{education.tex}
 
 \pdfbookmark[1]{Research Experience}{exp_research}
 \section*{Research Experience}
 \label{exp_research}
-\input{exp_research.tex}
+\myinput{exp_research.tex}
 
 \pdfbookmark[1]{Awards \& Honors}{awards}
 \section*{Awards \& Honors}
 \label{awards}
-\input{awards.tex}
+\myinput{awards.tex}
 
 
 \pdfbookmark[1]{Publications}{pubs}
@@ -146,7 +150,7 @@ $\dagger \rightarrow$ Equal contribution
 \pdfbookmark[1]{Tools \& Software}{tools}
 \section*{Tools \& Software}
 \label{tools}
-\input{tools.tex}
+\myinput{tools.tex}
 
 
 \pdfbookmark[1]{Presentations}{presentations}
@@ -180,31 +184,31 @@ $\dagger \rightarrow$ Equal contribution
 \pdfbookmark[1]{Selected Media Coverage}{media}
 \section*{Selected Media Coverage}
 \label{media}
-\input{media.tex} % Input lines load the material from the subdocuments
+\myinput{media.tex} % Input lines load the material from the subdocuments
 
 
 \pdfbookmark[1]{Teaching}{teaching}
 \section*{Teaching}
 \label{teaching}
-\input{teaching.tex}
+\myinput{teaching.tex}
 
 
 \pdfbookmark[1]{Academic Advising}{advising}
 \section*{Academic Advising}
 \label{advising}
-\input{advising.tex}
+\myinput{advising.tex}
 
 
 \pdfbookmark[1]{Academic Service}{service}
 \section*{Academic Service}
 \label{service}
-\input{service.tex}
+\myinput{service.tex}
 
 
 \pdfbookmark[1]{Other Experience}{exp_other}
 \section*{Other Experience}
 \label{exp_other}
-\input{exp_other.tex}
+\myinput{exp_other.tex}
 
 
 % Pretty ending with the date last updated
