@@ -32,15 +32,12 @@
 %template packages
 \usepackage{longtable}
 \usepackage{bookmark}
-\usepackage{fontawesome}
+\usepackage{fontawesome5}
 \usepackage{ragged2e}
 \usepackage{soul}
 \usepackage{kpfonts} % More professional font
 % \usepackage[default]{sourcecodepro} % Code-like font
 \usepackage[T1]{fontenc}
-
-% my packages
-\usepackage{moderncv}
 
 % Control hyperlinks and colors
 % CUSTOM COLORS INCLUDED DIRECTLY AFTER \begin{document}
@@ -72,22 +69,36 @@
 \newcommand{\myinput}[1]{
   \input{include/#1}
 }
-%%% ----------------------------- %%%
 
+% socials
+
+\newcommand{\social}[3]{
+  #1 \href{https://#2}{#3}
+}
+
+\newcommand{\socialicon}[2]{
+  \hypersetup{hidelinks}
+  \href{https://#2}{#1}
+  \hypersetup{hidelinks=false}
+}
+
+%%% ----------------------------- %%%
 
 \begin{document}
 \include{config/colors.tex} % Load custom colors from colors file
+
 \mytitle{
-  Qile Yang \textcolor{gray}{| Curriculum Vitae}
+  Qile Yang \textcolor{gray}{| \emph{Curriculum Vitae}}
 }{
   qile.yang@berkeley.edu
 }{
   https://qile0317.github.io/
 }{
-  Placeholder
-  %\social[linkedin]{qile0317}
+  \socialicon{\faGithub}{github.com/Qile0317}
+  \socialicon{\faLinkedin}{linkedin.com/in/qile0317}
+  \socialicon{\faGoogle}{scholar.google.com/citations?user=IsJeImQAAAAJ&hl=en}
+  \socialicon{\faOrcid}{orcid.org/my-orcid?orcid=0009-0005-0148-2499}
 }
-
 
 % Ensure right side margin is not surpassed by bibliography and the right margin is aligned throughout
 \RaggedRight
