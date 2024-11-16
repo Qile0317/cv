@@ -309,6 +309,7 @@ TSWLatexianTemp*
 ## Custom stuff here:
 
 .vscode
+install-tl-*
 
 # ignore so large bin changes aren't shown
 out

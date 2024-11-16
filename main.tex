@@ -29,26 +29,18 @@
 ]{biblatex}
 \addbibresource{ref.bib} % Adds the bibliography resource file 'ref.bib' containing all the references.
 
-% Allows columns that stretch across pages
+%template packages
 \usepackage{longtable}
-
-% Table functionality and beautification (not strictly needed)
 \usepackage{bookmark}
-
-% Use icons, if you want.
-% All available icons: http://mirrors.ibiblio.org/CTAN/fonts/fontawesome5/doc/fontawesome5.pdf
 \usepackage{fontawesome}
-
-% Allows font justification control (needed for clean pub-list formatting)
 \usepackage{ragged2e}
-
-% For underlining with line breaks
-\usepackage{soul} 
-
-% All fonts: https://tug.org/FontCatalogue/
+\usepackage{soul}
 \usepackage{kpfonts} % More professional font
 % \usepackage[default]{sourcecodepro} % Code-like font
 \usepackage[T1]{fontenc}
+
+% my packages
+\usepackage{moderncv}
 
 % Control hyperlinks and colors
 % CUSTOM COLORS INCLUDED DIRECTLY AFTER \begin{document}
@@ -85,7 +77,16 @@
 
 \begin{document}
 \include{config/colors.tex} % Load custom colors from colors file
-\mytitle{Your Name}{person@gmail.com}{yourwebsite.com}{Your Address\\Goes here\\This field can be excluded} % Insert your custom title
+\mytitle{
+  Qile Yang \textcolor{gray}{| Curriculum Vitae}
+}{
+  qile.yang@berkeley.edu
+}{
+  https://qile0317.github.io/
+}{
+  Placeholder
+  %\social[linkedin]{qile0317}
+}
 
 
 % Ensure right side margin is not surpassed by bibliography and the right margin is aligned throughout
