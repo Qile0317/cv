@@ -57,23 +57,9 @@
 
 %%% CONVENIENCE FUNCTIONS GO HERE %%%
 %%% ----------------------------- %%%
-\newcommand{\mytitle}[4]{
-  \begin{center}
-    \Large\textbf{#1}\normalsize \\ % Name in large bold font
-    \href{mailto:#2}{#2} \\ % Email with mailto: link
-    \href{https://#3}{#3} \\ % Website with link
-    #4 % Address
-  \end{center}
-}
 
 \newcommand{\myinput}[1]{
   \input{include/#1}
-}
-
-% socials
-
-\newcommand{\social}[3]{
-  #1 \href{https://#2}{#3}
 }
 
 \newcommand{\socialicon}[2]{
@@ -82,23 +68,27 @@
   \hypersetup{hidelinks=false}
 }
 
+\newcommand{\emailicon}[1]{
+  \hypersetup{hidelinks}
+  \faEnvelope \href{mailto:#1}{#1}
+  \hypersetup{hidelinks=false}
+}
+
 %%% ----------------------------- %%%
 
 \begin{document}
 \include{config/colors.tex} % Load custom colors from colors file
 
-\mytitle{
-  Qile Yang \textcolor{gray}{| \emph{Curriculum Vitae}}
-}{
-  qile.yang@berkeley.edu
-}{
-  https://qile0317.github.io/
-}{
-  \socialicon{\faGithub}{github.com/Qile0317}
+\begin{center}
+  \Large\textbf{Qile Yang \textcolor{gray}{| \emph{Curriculum Vitae}}}\normalsize \\
+  \href{mailto:qile.yang@berkeley.edu}{qile [dot] yang [at] berkeley [dot] edu} \\
+  % \emailicon{qile.yang@berkeley.edu}
+  \socialicon{\faGlobe}{qile0317.github.io}
   \socialicon{\faLinkedin}{linkedin.com/in/qile0317}
+  \socialicon{\faGithub}{github.com/Qile0317}
   \socialicon{\faGoogle}{scholar.google.com/citations?user=IsJeImQAAAAJ&hl=en}
   \socialicon{\faOrcid}{orcid.org/my-orcid?orcid=0009-0005-0148-2499}
-}
+\end{center}
 
 % Ensure right side margin is not surpassed by bibliography and the right margin is aligned throughout
 \RaggedRight
