@@ -7,17 +7,18 @@
 % Journals
 % #########################################################
 
-% APackOfTheClones
-@article{art1,
-    author={\textbf{Smith, John R.} and Brown, Michael and Yang, Steven},
-    title = {{Paper Title Goes Here}},
-    journal = {Journal Title},
-    volume = {1},
-    number = {1},
-    year = {2023},
-    url = {https://example.com},
-    keywords={J},
-    addendum = {\\ -- Add \textit{Extra Accolades} about \href{https://www.nature.com/Coolections/jhjibhhicg}{Your Article} \\ -- Write text here as normal LateX Allowing \href{https://example.com}{Special Formatting} \\ -- Best Paper Award (Conference XXX 2021)}
+@article{apotc,
+    doi = {10.21105/joss.06868},
+    url = {https://doi.org/10.21105/joss.06868},
+    year = {2024},
+    publisher = {The Open Journal},
+    volume = {9},
+    number = {103},
+    pages = {6868},
+    author = {\textbf{Qile Yang}},
+    title = {APackOfTheClones: Visualization of clonal expansion with circle packing},
+    journal = {Journal of Open Source Software},
+    keywords={J}
 }
 
 % Include daggers like below to mark equal contribution!
@@ -29,7 +30,8 @@
     number = {1},
     year = {2023},
     url = {https://example.com},
-    keywords={J}
+    keywords={J},
+    addendum = {\\ -- Add \textit{Extra Accolades} about \href{https://www.nature.com/Coolections/jhjibhhicg}{Your Article} \\ -- Write text here as normal LateX Allowing \href{https://example.com}{Special Formatting} \\ -- Best Paper Award (Conference XXX 2021)}
 }
 
 
@@ -47,19 +49,6 @@
     keywords={C}
 }
 
-@inproceedings{Conf2,
-	author={\textbf{Smith, John R.}},
-    title = {{Paper Title Goes Here}},
-    booktitle = {Proceedings of the Super Duper Cool Conference},
-    volume={15},
-    pages={1-10},
-    number={1},
-    year = {2021},
-    url={https://example.com},
-    keywords={C}
-}
-
-
 
 % Working papers
 % All of the non-standard items require the flexible "misc" class
@@ -70,21 +59,34 @@
 % ami project
 % gwi paper (acknowledgements)
 
-@misc{Working1,
-    title={Sweet new project about to blow up the scene!},
-    author={\textbf{Smith, John}. and Buddy, Best and Super, Advisor},
-    howpublished={ArXiv[Preprint], Revise and Resubmit @ PNAS},
+% scRepertoire
+@misc{screp,
+    title={scRepertoire 2.0: },
+    author={\textbf{Yang, Qile} and Borcherding, Nicholas},
+    howpublished={Bioinformatics Application Note},
     year={2023},
     url={https://example.com},
     keywords={R}
 }
 
-@misc{Working2,
-    title={Another good one!},
-    author={\textbf{Smith, John}. and Buddy, Best and Super, Advisor},
-    howpublished={ArXiv[Preprint], Revise and Resubmit @ PNAS},
+% mus-ei
+@misc{musei,
+    title={Exercise induces inflammation and fibrosis of old muscle and heart, unless Alk5 inhibitor and oxytocin are used},
+    author={Cruz, Joana M and Yeung, Hayden and Alzalzalee, Rana and \textbf{Yang, Q} and Kabir, Hannaneh and McDonough, Samantha and Mei, Xiaoyue and Conboy, Michael and Conboy, Irina},
+    howpublished={Under Review},
     note = {\href{https://example.com}{Embed extra links with the `note' field}},
-    year={2023},
+    year={2024},
+    url={https://example.com},
+    keywords={R}
+}
+
+% ami
+@misc{ami,
+    title={Second Paper to Exercise induces inflammation and fibrosis of old muscle and heart, unless Alk5 inhibitor and oxytocin are used},
+    author={Cruz, Joana M and TBD and \textbf{Yang, Q} and Conboy, Michael and Conboy, Irina},
+    howpublished={To Be Submitted},
+    note = {\href{https://example.com}{Embed extra links with the `note' field}},
+    year={2024},
     url={https://example.com},
     keywords={R}
 }
@@ -115,9 +117,9 @@
 
 % Posters
 % #########################################################
-@misc{Poster1,
+@misc{kmergma,
     title   = {{KmerGMA: A seed-based approach for fast homology searching}},
-    author  = {\textbf{Qile, Yang} and Murrel, Benjamin and Sahlin, Kristoffer},
+    author  = {\textbf{Qile, Yang} and Sahlin, Kristoffer and Murrel, Benjamin},
     howpublished={\ul{Swedish National Science Fair 2023 Finals} (Sodertalje, Sweden)},
     month   = apr,
     year    = {2023},
@@ -127,7 +129,7 @@
 % Demonstrations and Tutorials
 % #########################################################
 
-@misc{tut1,
+@misc{sofo,
     title   = {{Discovery of Novel Camelid Germline Immunoglobulin Alleles}},
     author  = {\textbf{Qile, Yang} and Murrel, Benjamin},
     howpublished={\ul{Karolinska Institute's summer resarch program (SoFo) 2022} (Stockholm, Sweden)},
@@ -136,11 +138,25 @@
     keywords={D}
 }
 
-@misc{tut2,
+@misc{igem,
     title   = {{Final Presentation: Hallucinating Scaffolds Team}},
     author  = {\textbf{Qile, Yang} and et al.},
     howpublished={\ul{iGEM at Berkeley All Hands 3} (Berkeley CA, USA)},
     month   = dec,
     year    = {2023},
     keywords={D}
+}
+
+% projects
+% #########################################################
+
+@misc{ibee,
+  author = {\textbf{Qile, Yang}},
+  title = {Characterization of a highschool's microbiome},
+  year = {2022},
+  howpublished = {IB Diploma Final project},
+  addendum = {
+    \\ -- \textbf{Extra Formatting} \\ -- \href{https://example.com}{Links like this}
+  },
+  keywords={X}
 }
