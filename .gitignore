@@ -308,8 +308,8 @@ TSWLatexianTemp*
 
 ## Custom stuff here:
 
-.vscode
+.vscode/
+dev/
 
 # ignore so large bin changes aren't shown
-out
-main.pdf
+out/

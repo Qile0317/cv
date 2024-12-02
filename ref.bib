@@ -21,99 +21,28 @@
     keywords={J}
 }
 
-% Include daggers like below to mark equal contribution!
-@article{art2,
-    author={\textbf{Guy$^{\dagger}$, Smart} and Gal$^{\dagger}$, Smart},
-    title = {{Paper Title Goes Here}},
-    journal = {Journal Title},
-    volume = {1},
-    number = {1},
-    year = {2023},
-    url = {https://example.com},
-    keywords={J},
-    addendum = {\\ -- Add \textit{Extra Accolades} about \href{https://www.nature.com/Coolections/jhjibhhicg}{Your Article} \\ -- Write text here as normal LateX Allowing \href{https://example.com}{Special Formatting} \\ -- Best Paper Award (Conference XXX 2021)}
-}
-
-
-% Conferences (placeholders)
-% #########################################################
-@inproceedings{Conf1,
-    author={\textbf{Smith, John R.} and Brown, Michael and Yang, Steven},
-    title = {{Paper Title Goes Here}},
-    booktitle = {Proceedings of the Super Cool Conference},
-    volume={15},
-    pages={1-10},
-    number={1},
-    year = {2021},
-    url={https://example.com},
-    keywords={C}
-}
-
-
 % Working papers
 % All of the non-standard items require the flexible "misc" class
 % #########################################################
 
-% scRepertoire v2
-% mus-ei-proteomics
-% ami project
 % gwi paper (acknowledgements)
 
-% scRepertoire
 @misc{screp,
-    title={scRepertoire 2.0: },
+    title={scRepertoire 2.0: Enhanced and Efficient Toolkit for Single-Cell Immune Profiling},
     author={\textbf{Yang, Qile} and Borcherding, Nicholas},
-    howpublished={Bioinformatics Application Note},
+    howpublished={Manuscript in preparation},
     year={2023},
-    url={https://example.com},
+    url={https://www.borch.dev/uploads/screpertoire/},
     keywords={R}
 }
 
-% mus-ei
 @misc{musei,
     title={Exercise induces inflammation and fibrosis of old muscle and heart, unless Alk5 inhibitor and oxytocin are used},
-    author={Cruz, Joana M and Yeung, Hayden and Alzalzalee, Rana and \textbf{Yang, Q} and Kabir, Hannaneh and McDonough, Samantha and Mei, Xiaoyue and Conboy, Michael and Conboy, Irina},
+    author={Cruz, Joana M and Yeung, Hayden and Alzalzalee, Rana and \textbf{Yang, Qile} and Kabir, Hannaneh and McDonough, Samantha and Mei, Xiaoyue and Conboy, Michael and Conboy, Irina},
     howpublished={Under Review},
-    note = {\href{https://example.com}{Embed extra links with the `note' field}},
     year={2024},
-    url={https://example.com},
     keywords={R}
 }
-
-% ami
-@misc{ami,
-    title={Second Paper to Exercise induces inflammation and fibrosis of old muscle and heart, unless Alk5 inhibitor and oxytocin are used},
-    author={Cruz, Joana M and TBD and \textbf{Yang, Q} and Conboy, Michael and Conboy, Irina},
-    howpublished={To Be Submitted},
-    note = {\href{https://example.com}{Embed extra links with the `note' field}},
-    year={2024},
-    url={https://example.com},
-    keywords={R}
-}
-
-% Talks (placeholders)
-% #########################################################
-
-@misc{Talk1,
-    title   = {Awe inspiring presentation.},
-    author  = {\textbf{Smith, John} and Buddy, Best},
-    howpublished={\ul{10th International Conference on Cool Science} (Philadelphia, PA, USA)},
-    month    = jul,
-    year    = {2024},
-    keywords={T}
-}
-
-@misc{Talk2,
-    title={Anotha' one!.},
-    author={\textbf{Khaled, DJ}},
-    howpublished={\ul{Fourth Multidisciplinary International Symposium on Blasting Bangers} (Virtual)},
-    note = {\href{https://example.com}{Links like this}},
-    addendum = {\\ -- Extra Formatting also works \\ -- \textbf{Here}.},
-    month=oct,
-    year={2022},
-    keywords={T}
-}
-
 
 % Posters
 % #########################################################
@@ -155,8 +84,15 @@
   title = {Characterization of a highschool's microbiome},
   year = {2022},
   howpublished = {IB Diploma Final project},
-  addendum = {
-    \\ -- \textbf{Extra Formatting} \\ -- \href{https://example.com}{Links like this}
-  },
   keywords={X}
+}
+
+# software
+% #########################################################
+
+@manual{biocScrep2,
+  author = {Borcherding, Nicholas and \textbf{Yang, Qile} and Safina, Ksenia},
+  title = {scRepertoire v2: A toolkit for single-cell immune receptor profiling.},
+  year = {2024},
+  doi={10.18129/B9.bioc.scRepertoire}
 }
