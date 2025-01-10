@@ -310,6 +310,4 @@ TSWLatexianTemp*
 
 .vscode/
 dev/
-
-# ignore so large bin changes aren't shown
 out/
