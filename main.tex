@@ -1,5 +1,6 @@
 \documentclass[11pt]{article}
 \usepackage[margin=1in]{geometry}
+\usepackage{CJKutf8}
 
 \usepackage[
     backend=biber,
@@ -146,11 +147,16 @@
 \label{demos}
 \newrefcontext[labelprefix=D] \printbibliography[heading=none,resetnumbers=true,keyword=D]
 
-\pdfbookmark[1]{Projects}{projects}
-\section*{Projects}
-\label{projects}
-\newrefcontext[labelprefix=X]        
-\printbibliography[heading=none,resetnumbers=true,keyword=X]
+% \pdfbookmark[1]{Projects}{projects}
+% \section*{Projects}
+% \label{projects}
+% \newrefcontext[labelprefix=X]        
+% \printbibliography[heading=none,resetnumbers=true,keyword=X]
+
+\pdfbookmark[1]{Media}{Media}
+\section*{Selected Media}
+\label{media}
+\myinput{media.tex}
 
 % \pdfbookmark[1]{Other Experience}{exp_other}
 % \section*{Other Experience}
