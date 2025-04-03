@@ -53,5 +53,8 @@
       "name": "pdflatex -> bibtex -> pdflatex * 2",
       "tools": ["pdflatex", "bibtex", "pdflatex", "pdflatex", "pdf linux"]
     }
+  ],
+  "cSpell.words": [
+    "textbf"
   ]
 }

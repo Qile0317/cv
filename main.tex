@@ -1,6 +1,7 @@
 \documentclass[11pt]{article}
 \usepackage[margin=1in]{geometry}
 \usepackage{CJKutf8}
+%\linespread{0.985}
 
 \usepackage[
     backend=biber,
@@ -147,11 +148,11 @@
 \label{demos}
 \newrefcontext[labelprefix=D] \printbibliography[heading=none,resetnumbers=true,keyword=D]
 
-% \pdfbookmark[1]{Projects}{projects}
-% \section*{Projects}
-% \label{projects}
-% \newrefcontext[labelprefix=X]        
-% \printbibliography[heading=none,resetnumbers=true,keyword=X]
+\pdfbookmark[1]{Projects}{projects}
+\section*{Projects}
+\label{projects}
+\newrefcontext[labelprefix=X]        
+\printbibliography[heading=none,resetnumbers=true,keyword=X]
 
 \pdfbookmark[1]{Media}{Media}
 \section*{Selected Media}
@@ -163,7 +164,7 @@
 % \label{exp_other}
 % \myinput{exp_other.tex}
 
-\newpage
+% \newpage
 \pdfbookmark[1]{Relevant Coursework}{coursework}
 \section*{Relevant Coursework}
 \label{coursework}
