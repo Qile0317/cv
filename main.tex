@@ -3,6 +3,8 @@
 \usepackage{CJKutf8}
 %\linespread{0.985}
 
+\hbadness=99999
+
 \usepackage[
     backend=biber,
     maxnames=20,        % Limits the maximum number of author names to display before abbreviating with "et al."
@@ -47,13 +49,6 @@
 \newcommand{\socialicon}[2]{
   \hypersetup{hidelinks}
   \href{https://#2}{#1}
-  \hypersetup{hidelinks=false}
-}
-
-\newcommand{\emailicon}[1]{
-  \hypersetup{hidelinks}
-  \faEnvelope \href{mailto:#1}{#1}
-  \hypersetup{hidelinks=false}
 }
 
 %%% ----------------------------- %%%
