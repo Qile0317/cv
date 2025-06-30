@@ -4,4 +4,6 @@
 
 ## Building
 
-Compile `main.tex` with some LaTex distribution with the repo root as the working directory to build the PDF from scratch.
+Compile `main.tex` with `lualatex` with the repo root as the working directory to build the PDF from scratch.
+
+If using latex workshop on vscode on linux (including WSL) - the committed vscode settings should automatically handle compilation on save.

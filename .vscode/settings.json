@@ -1,9 +1,9 @@
 {
-    "latex-workshop.latex.autoBuild.run": "onSave",
-    "latex-workshop.view.pdf.viewer": "tab",
-    "latex-workshop.latex.outDir": "./out",
+  "latex-workshop.latex.autoBuild.run": "onSave",
+  "latex-workshop.view.pdf.viewer": "tab",
+  "latex-workshop.latex.outDir": "./out",
 
-    "latex-workshop.latex.tools": [
+  "latex-workshop.latex.tools": [
     {
       "name": "latexmk",
       "command": "latexmk",
@@ -11,15 +11,15 @@
         "-synctex=1",
         "-interaction=nonstopmode",
         "-file-line-error",
-        "-pdf",
+        "-lualatex",
         "-outdir=%OUTDIR%",
         "%DOC%"
       ],
       "env": {}
     },
     {
-      "name": "pdflatex",
-      "command": "pdflatex",
+      "name": "lualatex",
+      "command": "lualatex",
       "args": [
         "-synctex=1",
         "-interaction=nonstopmode",
@@ -37,10 +37,10 @@
     {
       "name": "pdf linux",
       "command": "bash",
-        "args": [
-            "-c",
-            "cp '%OUTDIR%/%DOCFILE%.pdf' '%DIR%/cv-qile-yang.pdf'"
-        ]
+      "args": [
+        "-c",
+        "cp '%OUTDIR%/%DOCFILE%.pdf' '%DIR%/cv-qile-yang.pdf'"
+      ]
     }
   ],
 
@@ -50,8 +50,8 @@
       "tools": ["latexmk", "pdf linux"]
     },
     {
-      "name": "pdflatex -> bibtex -> pdflatex * 2",
-      "tools": ["pdflatex", "bibtex", "pdflatex", "pdflatex", "pdf linux"]
+      "name": "lualatex -> bibtex -> lualatex * 2",
+      "tools": ["lualatex", "bibtex", "lualatex", "lualatex", "pdf linux"]
     }
   ],
   "cSpell.words": [
